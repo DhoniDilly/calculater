@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+</head>
+<body>
+    <input class="number1" type="number"/>
+    <input class="number2" type="number"/>
+    <input type="text" class="op"/>
+    <button class="btn">calculater</button>
+
+    <script>
+        document.querySelector('.btn').addEventListener('click', function(){
+           var num1 =  Number(document.querySelector('.number1').value);
+           var num2 =  Number(document.querySelector('.number2').value);
+           var op =  document.querySelector('.op').value;
+          //alert(num1+num2+op)
+
+           if(op == "+")
+           {
+            alert(num1 + num2);
+           }
+           else if(op == "-")
+           {
+            alert(num1 - num2);
+           }else if(op == "*")
+           {
+            alert(num1 * num2);
+           }else if(op == "/")
+           {
+            alert(num1 / num2);
+           }else{
+            alert("invalite input......")
+           }
+
+
+        })
+    </script>
+</body>
+</html>
